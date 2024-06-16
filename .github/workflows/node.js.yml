@@ -16,7 +16,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '18.17.0' # Ubah versi Node.js sesuai dengan kebutuhan Next.js
+          node-version: '18.17.0' # Sesuaikan versi Node.js sesuai kebutuhan Next.js
 
       - name: Install dependencies
         run: npm install
@@ -27,4 +27,4 @@ jobs:
       - name: Deploy to Vercel
         env:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
-        run: npx vercel --token $VERCEL_TOKEN --prod
+        run: npx vercel --token e17093794106bb0ba8806014d4eb1109 --prod
